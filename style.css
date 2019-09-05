@@ -1,10 +1,10 @@
 /*styles go here*/
 /*how do i get rid of the border white */
 
-#container{
-  align-content: center;
+body{
+  width:100%;
+  margin: 0 auto;
   background-color: #FFFBE8;
-  color: #FFFBE8;
 }
 
 
@@ -14,6 +14,12 @@ a:link, a:visited{
   text-align:center;
   font-family: "Heebo", Arial, sans-serif;
   font-weight: 500;
+}
+
+#header{
+  margin: 0 auto;
+  background-color: #cacafa;
+  padding:1px;
 }
 
 #nav{
@@ -28,9 +34,9 @@ a:link, a:visited{
 
 #nav a:link, #nav a:visited{
   display: block;
-  background-color: #cacafa;
+  /*background-color: #cacafa;*/
   text-decoration: none;
-  font-size: 12;
+  font-size: 12px;
   font-family: Helvetica, Arial, serif;
   font-weight: normal;
   color: white;
@@ -44,7 +50,7 @@ a:link, a:visited{
 }
 
 h1{
-  font-size: 25;
+  font-size: 25px;
   font-weight: bold;
   color: #6D6DD6;
   text-align: center;
@@ -54,7 +60,7 @@ h1{
 
 
 p{
-  font-size: 12;
+  font-size: 12px;
   font-family: 'BioRhyme', Garamond, serif;
   font-weight: 300;
   color: black;
@@ -71,10 +77,9 @@ ul{
 image{border: none;}
 
 #footer{
-  align-content: left;
-  font-size: 8;
-  font font-family: Helvetica, Arial, serif;
-  text-decoration: italic;
+  font-size: 8px;
+  font-family: Helvetica, Arial, serif;
+  font-style: italic;
   color: grey;
   background-color: white;
   padding: 5px;
