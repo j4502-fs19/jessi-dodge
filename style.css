@@ -4,7 +4,7 @@
 body{
   width:100%;
   margin: 0 auto;
-  background-color: #FFFBE8;
+  background-color: white;
 }
 
 
@@ -23,7 +23,7 @@ a:link, a:visited{
 }
 
 #nav{
-  padding: 0  ;
+  padding: 0;
   list-style-type: none;
   line-height: 1.25;
 }
@@ -76,11 +76,35 @@ ul{
 
 image{border: none;}
 
-#footer{
+.footer{
   font-size: 8px;
   font-family: Helvetica, Arial, serif;
   font-style: italic;
   color: grey;
   background-color: white;
   padding: 5px;
+}
+
+
+
+#nav{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 599px){
+  #nav{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 799px){
+  #nav{
+    flex-direction: row;
+    justify content: space-between;
+  }
+
+
+
 }
