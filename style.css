@@ -2,7 +2,7 @@
 /*how do i get rid of the border white */
 
 body{
-  width:100%;
+  width:90%;
   margin: 0 auto;
   background-color: white;
 }
@@ -52,8 +52,8 @@ a:link, a:visited{
 h1{
   font-size: 25px;
   font-weight: bold;
-  color: #6D6DD6;
   text-align: center;
+  color: #6D6DD6;
   font-family: 'Heebo', Arial, sans-serif;
   font-weight: bold;
 }
@@ -74,7 +74,9 @@ ul{
   list-style-type: none;
 }
 
-image{border: none;}
+image{
+  border: none;
+  }
 
 .footer{
   font-size: 8px;
@@ -85,26 +87,151 @@ image{border: none;}
   padding: 5px;
 }
 
-
+.headshot{
+  display: none;
+}
 
 #nav{
   display: flex;
   flex-direction: column;
 }
 
+.section0, .section1, .section2, .section3, .section4, .section5, .section6{
+  text-align: center;
+}
+
+
+
+
 @media (min-width: 599px){
   #nav{
     flex-direction: row;
     justify-content: space-around;
   }
+
+  body{
+    width: 85%;
+  }
+  h1{
+    text-align: left;
+    justify-content: center;
+}
+  img{
+    max-height: 200px;
+    width: auto;
 }
 
-@media (min-width: 799px){
-  #nav{
-    flex-direction: row;
-    justify content: space-between;
+  article{
+    width: 85%;
+    font-size: 12px;
+    font-family: 'BioRhyme', Garamond, serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    line-height: 1;
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+    grid-template-rows: 200px 1fr 1fr 200px;
+    grid-gap: 35px;
+    grid-template-areas:
+    "a g h"
+    "b b c"
+    "d . e"
+    ". f ."
   }
 
+  .headshot{
+    display: block;
+    grid-area: a;
+  }
 
+  .section0{
+  grid-area:g;
+}
+
+  .section1{
+    grid-area: b;
+  }
+
+  .section2{
+    grid-area: c;
+  }
+
+  .section3{
+    grid-area: d;
+  }
+
+  .section4{
+    grid-area: e;
+  }
+
+  .section5{
+    grid-area: f;
+  }
+
+  .section6{
+    grid-area: h;
+  }
+
+}
+
+
+
+
+@media (min-width: 1000px){
+  #nav{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  body{
+    width: 70%;
+  }
+
+  article{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 200px 1fr 1fr 1fr;
+    grid-gap: 40px;
+    grid-template-areas:
+    "a g h"
+    "b b c"
+    "d . e"
+    ". f ."
+  }
+
+  .headshot{
+    display: block;
+    grid-area: a;
+  }
+
+  .section0{
+  grid-area:g;
+}
+
+  .section1{
+    grid-area: b;
+  }
+
+  .section2{
+    grid-area: c;
+  }
+
+  .section3{
+    grid-area: d;
+  }
+
+  .section4{
+    grid-area: e;
+  }
+
+  .section5{
+    grid-area: f;
+  }
+
+  .section6{
+    grid-area: h;
+  }
 
 }
