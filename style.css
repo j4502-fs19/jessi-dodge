@@ -103,6 +103,7 @@ image{
 
 
 
+
 @media (min-width: 599px){
   #nav{
     flex-direction: row;
@@ -131,49 +132,36 @@ image{
     line-height: 1;
     display: grid;
     grid-template-columns: 1fr 400px 1fr;
-    grid-template-rows: 200px 1fr 1fr 200px;
+    grid-template-rows: 200px 1fr 75px 50px;
     grid-gap: 35px;
     grid-template-areas:
     "a g h"
     "b b c"
     "d . e"
     ". f ."
-  }
+}
 
   .headshot{
     display: block;
     grid-area: a;
   }
 
-  .section0{
-  grid-area:g;
-}
+  .section0{grid-area:g;}
 
-  .section1{
-    grid-area: b;
-  }
+  .section1{grid-area: b;}
 
-  .section2{
-    grid-area: c;
-  }
+  .section2{grid-area: c;}
 
-  .section3{
-    grid-area: d;
-  }
+  .section3{grid-area: d;}
 
-  .section4{
-    grid-area: e;
-  }
+  .section4{grid-area: e;}
 
-  .section5{
-    grid-area: f;
-  }
+  .section5{grid-area: f;}
 
-  .section6{
-    grid-area: h;
-  }
+  .section6{grid-area: h;}
 
 }
+
 
 
 
@@ -192,7 +180,7 @@ image{
     width: 70%;
     display: grid;
     grid-template-columns: 1fr 500px 1fr;
-    grid-template-rows: 200px 1fr 1fr 1fr;
+    grid-template-rows: 200px 1fr 75px 50px;
     grid-gap: 40px;
     grid-template-areas:
     "a g h"
@@ -203,35 +191,20 @@ image{
 
   .headshot{
     display: block;
-    grid-area: a;
-  }
+    grid-area: a;}
 
-  .section0{
-  grid-area:g;
-}
+  .section0{grid-area:g;}
 
-  .section1{
-    grid-area: b;
-  }
+  .section1{grid-area: b;}
 
-  .section2{
-    grid-area: c;
-  }
+  .section2{grid-area: c;}
 
-  .section3{
-    grid-area: d;
-  }
+  .section3{grid-area: d;}
 
-  .section4{
-    grid-area: e;
-  }
+  .section4{grid-area: e;}
 
-  .section5{
-    grid-area: f;
-  }
+  .section5{grid-area: f;}
 
-  .section6{
-    grid-area: h;
-  }
+  .section6{grid-area: h;}
 
 }
