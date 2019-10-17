@@ -18,7 +18,7 @@ a:link, a:visited{
 
 #header{
   margin: 0 auto;
-  background-color: #cacafa;
+  /*background-color: #cacafa;*/
   padding:1px;
 }
 
@@ -26,6 +26,9 @@ a:link, a:visited{
   padding: 0;
   list-style-type: none;
   line-height: 1.25;
+}
+#header ul{
+  display:none;
 }
 
 #nav li{
@@ -46,7 +49,6 @@ a:link, a:visited{
 
 #nav a:hover{
   background-color: #dedeff;
-
 }
 
 h1{
@@ -100,14 +102,25 @@ image{
   text-align: center;
 }
 
+.menu-trigger{
+  order:1;
+}
 
 
 
 
 @media (min-width: 599px){
-  #nav{
+  #header ul{
+    display:flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+  #header{
+    background-color: #cacafa;
+  }
+
+  .menu-trigger{
+    display:none;
   }
 
   body{
@@ -131,7 +144,7 @@ image{
     text-align: center;
     line-height: 1;
     display: grid;
-    grid-template-columns: 1fr 400px 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 200px 1fr 75px 50px;
     grid-gap: 35px;
     grid-template-areas:
@@ -179,7 +192,7 @@ image{
   article{
     width: 70%;
     display: grid;
-    grid-template-columns: 1fr 500px 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 200px 1fr 75px 50px;
     grid-gap: 40px;
     grid-template-areas:
